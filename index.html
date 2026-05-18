@@ -5,16 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>影愿文化 | 小区电子屏广告文案生成器</title>
     <style>
-        body { font-family: "Microsoft YaHei", sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: #333; }
-        .container { max-width: 800px; margin: 40px auto; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden; }
-        header { background: #1e3a8a; color: white; padding: 30px; text-align: center; }
+        body { 
+            font-family: "Microsoft YaHei", sans-serif; 
+            margin: 0; padding: 20px; 
+            background: linear-gradient(135deg, #667eea, #764ba2); 
+            color: #333; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 40px auto; 
+            background: white; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            overflow: hidden; 
+        }
+        header { 
+            background: #1e3a8a; 
+            color: white; 
+            padding: 30px; 
+            text-align: center; 
+        }
         h1 { margin: 0; font-size: 28px; }
         .content { padding: 30px; }
-        textarea, input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; }
-        button { background: #2563eb; color: white; padding: 14px 28px; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; margin: 10px 5px; }
+        textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin: 10px 0; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            font-size: 16px; 
+            min-height: 80px;
+        }
+        button { 
+            background: #2563eb; 
+            color: white; 
+            padding: 14px 28px; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 18px; 
+            cursor: pointer; 
+            margin: 10px 5px; 
+        }
         button:hover { background: #1d4ed8; }
-        .output { margin-top: 20px; padding: 20px; background: #f8fafc; border-radius: 8px; white-space: pre-wrap; }
-        .tip { font-size: 14px; color: #666; margin-top: 20px; }
+        .contact { 
+            background: #f0f9ff; 
+            padding: 15px; 
+            border-radius: 8px; 
+            text-align: center; 
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .disclaimer {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -23,7 +70,13 @@
             <h1>🟢 影愿文化小区电子屏广告</h1>
             <p>专业文案一键生成器</p>
         </header>
+        
         <div class="content">
+            <div class="contact">
+                📱 <strong>微信咨询：请添加 [你的微信号]</strong><br>
+                备注：小区广告合作
+            </div>
+
             <h2>使用方法</h2>
             <p>在下方输入你的需求，点击“复制生成提示词”，然后粘贴到 ChatGPT / Claude / 扣子 即可快速生成高质量文案。</p>
             
@@ -32,8 +85,8 @@
             <button onclick="copyPrompt()">📋 复制生成提示词</button>
             <button onclick="clearInput()">清空</button>
 
-            <div class="tip">
-                <strong>提示词已内置专业设定</strong>，生成后可继续要求AI修改（如“改得更短一点”“加价格表”等）。
+            <div class="disclaimer">
+                ⚠️ 最终以正式合同为准。请以实际签约内容为准。
             </div>
         </div>
     </div>
@@ -43,25 +96,4 @@
             const userInput = document.getElementById('userInput').value.trim();
             const basePrompt = `我是影愿文化小区电子屏广告投放专家，请帮我写一篇文案。
 
-核心卖点：小区精准流量、低成本高曝光、既能宣传自己又能赚广告费、操作简单长期稳定收益。
-
-用户需求：${userInput || "上海宝山小区电子屏广告投放"}
-
-请严格按照以下格式输出：
-**标题：**（吸引眼球）
-**正文：**（400-650字，分段，带小标题）
-**行动号召：**（强烈引导添加微信或打电话）
-
-最终以正式合同为准。`;
-
-            navigator.clipboard.writeText(basePrompt).then(() => {
-                alert('✅ 提示词已复制！\n\n请打开 ChatGPT / Claude / 扣子，粘贴即可生成文案。');
-            });
-        }
-
-        function clearInput() {
-            document.getElementById('userInput').value = '';
-        }
-    </script>
-</body>
-</html>
+核心卖点：小区精准流量、低成本高曝光、
