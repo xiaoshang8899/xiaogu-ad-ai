@@ -45,10 +45,16 @@
         </div>
     </div>
 
-    <script>
-        function generatePrompt() {
-            const userInput = document.getElementById('userInput').value.trim();
-           const basePrompt = `你是一位拥有15年线下社区出入口、小区大门LED电子屏广告策划经验的顶级专家。请根据用户输入的信息，为其精准生成最适合在【小区门口电子屏/出入口道闸屏】投放的爆款广告文案。
+<script>
+    function generatePrompt() {
+        const userInput = document.getElementById('userInput').value.trim();
+        
+        if (!userInput) {
+            alert('请输入商家名称和核心卖点！');
+            return;
+        }
+
+        const basePrompt = `你是一位拥有15年线下社区出入口、小区大门LED电子屏广告策划经验的顶级专家。请根据用户输入的信息，为其精准生成最适合在【小区门口电子屏/出入口道闸屏】投放的爆款广告文案。
 
 【大门屏幕核心痛点】业主进出停留极短（3-5秒），字数必须极致精简，大标题控制在8字以内！主打“便利、顺路、就在大门口、进门左拐”等强地域属性。
 
@@ -58,20 +64,26 @@
 3. 📢【小区专属通知版】（伪装成社区友情提醒，吸引观看）
 
 用户输入的商家与核心卖点是：${userInput}`;
-            // 显示并复制
-            const outputDiv = document.getElementById('promptOutput');
-            outputDiv.style.display = 'block';
-            outputDiv.textContent = basePrompt;
 
-            navigator.clipboard.writeText(basePrompt).then(() => {
-                alert('✅ 提示词已生成并复制到剪贴板！\n\n请直接粘贴到 ChatGPT / Claude / 扣子 使用。');
-            });
-        }
+        // 显示并复制
+        const outputDiv = document.getElementById('promptOutput');
+        outputDiv.innerText = basePrompt;
+        outputDiv.style.display = 'block';
 
-        function clearInput() {
-            document.getElementById('userInput').value = '';
-            document.getElementById('promptOutput').style.display = 'none';
-        }
-    </script>
+        // 自动复制到剪贴板
+        navigator.clipboard.writeText(basePrompt).then(() => {
+            alert('🟢 提示词已生成并复制到剪贴板！\n\n请直接粘贴到 ChatGPT / Claude / 扣子使用。');
+        }).catch(err => {
+            console.error('复制失败:', err);
+        });
+    }
+
+    function clearInput() {
+        document.getElementById('userInput').value = '';
+        const outputDiv = document.getElementById('promptOutput');
+        outputDiv.style.display = 'none';
+        outputDiv.innerText = '';
+    }
+</script>
 </body>
 </html>
