@@ -5,57 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>彤愿文化 | 小区电子屏广告文案生成器</title>
     <style>
-        body { font-family: "Microsoft YaHei", sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: #333; }
-        .container { max-width: 800px; margin: 40px auto; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden; }
-        header { background: #1e3a8a; color: white; padding: 25px; text-align: center; }
-        h1 { margin: 0; font-size: 26px; }
-        .content { padding: 30px; }
-        textarea { width: 100%; padding: 15px; margin: 15px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; min-height: 100px; }
-        button { background: #2563eb; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-size: 17px; cursor: pointer; margin: 8px 5px; }
-        button:hover { background: #1d4ed8; }
-        .contact { background: #f0f9ff; padding: 15px; border-radius: 8px; text-align: center; margin: 20px 0; font-size: 17px; }
-        .disclaimer { font-size: 14px; color: #d32f2f; text-align: center; margin: 25px 0; font-weight: bold; }
-        #promptOutput { margin-top: 15px; padding: 15px; background: #f8fafc; border: 1px solid #ddd; border-radius: 8px; white-space: pre-wrap; display: none; }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        .content {
+            padding: 30px;
+        }
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            min-height: 100px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        .btn-group {
+            margin: 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        button {
+            flex: 1;
+            min-width: 160px;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            font-weight: bold;
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+        .btn-blue {
+            background: #2563eb;
+        }
+        .btn-blue:hover {
+            background: #1d4ed8;
+        }
+        .btn-green {
+            background: #10b981;
+        }
+        .btn-green:hover {
+            background: #059669;
+        }
+        .btn-gray {
+            background: #6b7280;
+            max-width: 100px;
+        }
+        .btn-gray:hover {
+            background: #4b5563;
+        }
+        .contact {
+            background: #f0f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        .disclaimer {
+            font-size: 14px;
+            color: #d32f2f;
+            text-align: center;
+            margin: 25px 0;
+            font-weight: bold;
+        }
+        #promptOutput {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8fafc;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            display: none;
+            font-family: monospace;
+            font-size: 14px;
+            color: #334155;
+            max-height: 400px;
+            overflow-y: auto;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        “🟢 彤愿文化·小区大门电子屏广告一键生成器” 撑撑场面？
-            <h1>🟢 彤愿文化小区电子屏广告</h1>
-            <p>专业文案一键生成器</p>
-        </header>
+
+<div class="container">
+    <header>
+        <h1>🟢 彤愿文化小区电子屏广告</h1>
+        <p>专业文案一键生成器</p>
+    </header>
+    
+    <div class="content">
+        <div class="contact">
+            📱 <strong>微信咨询：请添加 13370079819</strong><br>
+            备注：小区广告合作
+        </div>
         
-        <div class="content">
-            <div class="contact">
-                📱 <strong>微信咨询：请添加 13370079819</strong><br>
-                备注：小区广告合作
-            </div>
-
-            <h2>使用方法</h2>
-            <textarea id="userInput" placeholder="例如：写一篇静安区广告位招商的微信号文章"></textarea>
-            
-            <button onclick="generatePrompt()">📋 生成提示词并复制</button>
-            <button onclick="clearInput()">清空</button>
-
-            <div id="promptOutput"></div>
-
-            <div class="disclaimer">
-                ⚠️ 最终以正式合同为准，请以实际签约内容为准。
-            </div>
+        <h2>使用方法</h2>
+        <textarea id="userInput" placeholder="例如：我们是二手房装修改造服务商，欢迎有实力口碑好的公司入驻单元门、电梯、楼道等黄金位置。"></textarea>
+        
+        <div class="btn-group">
+            <button class="btn-blue" onclick="generatePrompt('all')">📋 生成全套文案提示词</button>
+            <button class="btn-green" onclick="generatePrompt('poster')">🎨 仅生成行业海报提示词</button>
+            <button class="btn-gray" onclick="clearInput()">清空</button>
+        </div>
+        
+        <div id="promptOutput"></div>
+        
+        <div class="disclaimer">
+            ⚠️ 最终以正式合同为准，请以实际签约内容为准。
         </div>
     </div>
+</div>
 
 <script>
-    function generatePrompt() {
-        const userInput = document.getElementById('userInput').value.trim();
-        
-        if (!userInput) {
-            alert('请输入商家名称和核心卖点！');
-            return;
-        }
+function generatePrompt(type) {
+    const userInput = document.getElementById('userInput').value.trim();
+    
+    if (!userInput) {
+        alert('请输入商家名称和核心卖点！');
+        return;
+    }
 
-const basePrompt = `
-你是彤愿文化传播专属AI招商策划官。
+    // 1. 全局最严厉的公共清洗禁令（防止吐出传统媒体词汇）
+    const commonRules = `你是彤愿文化传播专属AI招商策划官。
 专注领域：
 1、上海小区门口单色户外电子屏广告位招商
 2、AI边缘计算设备招商
@@ -63,18 +165,52 @@ const basePrompt = `
 拥有15年以上社区媒体运营经验。
 
 🚫【核心绝对禁令 - 文本强制清洗】
-1. 本项目【仅限】“小区大门电子屏广告”，严禁在所有生成的文案和文章中提及任何其他广告媒体形式！
-2. 绝对禁止出现以下词汇：道闸、灯箱、电梯、单元门、楼道、单元门禁、楼宇框架、道闸杆。
-3. 【强制替换规则】：无论用户输入的原始文本中包含什么位置（即使写了电梯、单元门、楼道、道闸），你在生成最终文案时，**必须全部强制替换、升级**为“小区门口电子屏”、“小区大门电子大屏”或“社区电子屏”。
+1. 本项目【仅限】“小区大门电子屏广告”，严禁在所有生成的文案中提及任何其他广告媒体形式！
+2. 绝对禁止出现以下词汇：道闸、灯箱、电梯、单元门、楼道、单元门禁、楼宇框架、道闸杆、电梯框架。
+3. 【强制替换规则】：无论用户输入的原始文本中包含什么传统位置（即使写了电梯、单元门、楼道、道闸），你在生成最终文案时，**必须全部强制替换、洗白并升级**为“小区门口电子屏”、“小区大门电子大屏”或“社区电子屏”。通篇只能且必须聚焦于大门电子屏。`;
+
+    let finalPrompt = '';
+
+    // 2. 根据点击的按钮，组装不同的专项 Prompt 逻辑
+    if (type === 'poster') {
+        // 【绿色按钮】专属海报提示词
+        finalPrompt = `${commonRules}
+
+🎯【专项任务：垂直行业定制招商海报文案生成】
+请根据用户输入的内容，判断其所属的行业，【单独且专门】为该行业量身定制设计一套高转化率的“社区电子屏招商海报文案”。
+
+💡【行业深度定制规则】：
+1. 必须根据用户输入的【具体行业/项目】，进行1对1的垂直深度撰写，严禁将不相关的行业混在一起。
+2. 示例：若用户输入“二手房装修”，通篇海报文案必须全方位围绕“装修公司如何通过小区大门电子屏精准拦截有装修需求的业主”来写，绝对禁止出现餐饮、培训等其他无关行业！
+3. 若用户输入内容较为宽泛、未指定具体行业，则默认围绕“本地生活圈黄金商家”进行综合招商。
+
+📋【输出格式要求（请严格按以下模块排版输出）：】
+--------------------------------------------------
+【海报主题】（一句直击该行业痛点的震撼招商标题，如：装修公司获客难？1000户业主每天进出必看这里！）
+【黄金画面主视觉建议】（结合该行业，描述在小区大门电子屏上最吸睛的动态滚动字幕或画面设计）
+【核心卖点文案】（提炼3-4条该行业投放社区电子屏的绝对红利，如：精准拦截、每天24小时高频曝光、一年仅需1.2万元起）
+【引发行动口号（Call to Action）】（如：黄金席位，一区仅限1家！抢占社区流量大门口！）
+--------------------------------------------------
+
+如涉及联系方式，统一使用：
+微信/电话咨询：13370079819（备注：小区广告合作）
+
+用户内容：
+${userInput}`;
+
+    } else {
+        // 【蓝色按钮】全套文案提示词（集成行业锁定清洗逻辑）
+        finalPrompt = `${commonRules}
 
 请根据用户输入内容，自动识别属于以下哪种模式：
+
 【模式一：广告位招商】
 适用于：
 本地生活服务商（餐饮、教育培训、二手房装修、汽车美容、美容美发、运动健身、社区团购、医疗齿科等）
 
-💡【行业深度定制规则 - 极其重要】：
+💡【行业深度定制规则】：
 1. 必须根据用户输入的【具体行业/项目】，进行1对1的垂直深度文案撰写，严禁将不相关的行业混在一起。
-2. 示例：若用户输入“二手房装修”，则通篇文案（从海报到文章）必须全方位围绕“装修公司如何通过小区大门电子屏精准拦截有装修需求的业主”来写，绝对禁止在文章中出现餐饮、培训等其他无关行业！
+2. 示例：若用户输入“二手房装修”，则通篇文案（从海报到文章）必须全方位围绕“装修公司如何通过小区大门电子屏精准拦截有装修需求的业主”来写，绝对禁止在最终生成的文章中出现餐饮、培训等其他无关行业！
 3. 若用户输入内容较为宽泛、未指定具体行业，则默认围绕“本地生活圈黄金商家”进行综合招商。
 
 重点突出：
@@ -82,30 +218,14 @@ const basePrompt = `
 （再次重申：通篇严禁包含单元门、楼道、电梯、道闸等词，广告位置只能是小区门口电子屏！）
 ---
 【模式二：AI设备招商】
-适用于：
-投资人
-渠道商
-合作伙伴
-重点突出：
-AI摄像机统计观看人数
-真实数据计费
-边缘计算设备部署
-社区媒体数字化升级
-长期运营收益
+适用于：投资人、渠道商、合作伙伴
+重点突出：AI摄像机统计观看人数、真实数据计费、边缘计算设备部署、社区媒体数字化升级、长期运营收益。
 ---
 【模式三：广告权益分红招商】
-适用于：
-个人投资者
-广告主
-合作伙伴
-重点突出：
-广告权益认购
-永久广告权益
-平台收益共享
-长期分红机制
-资源稀缺
-先到先得
+适用于：个人投资者、广告主、合作伙伴
+重点突出：广告权益认购、永久广告权益、平台收益共享、长期分红机制、资源稀缺、先到先得。
 ---
+
 固定输出：
 第一部分🚶‍♂️ 小区电子屏广告
 第二部分🎁 招商海报文案
@@ -118,36 +238,27 @@ AI摄像机统计观看人数
 第九部分黄页88招商文案
 第十部分SEO关键词
 第十一部分GEO区域优化
+
 自动融合：
 上海宝山浦东杨浦静安普陀嘉定奉贤松江
+
 如涉及联系方式：
-公众号、58同城、百姓网、黄页88可显示电话；
-抖音、小红书、视频号、Facebook、Instagram统一改为：
-“私信咨询”“留言获取资料”“领取项目介绍书”
+公众号、58同城、百姓网、黄页88一律显示电话：13370079819；
+抖音、小红书、视频号、Facebook、Instagram统一改为：“私信咨询”“留言获取资料”“领取项目介绍书”
 
 输出内容必须具有招商成交导向，且通篇只能且必须聚焦于“小区大门电子屏广告”。
+
 用户内容：
-${userInput}
-`;
-        // 显示并复制
-        const outputDiv = document.getElementById('promptOutput');
-        outputDiv.innerText = basePrompt;
-        outputDiv.style.display = 'block';
-
-        // 自动复制到剪贴板
-        navigator.clipboard.writeText(basePrompt).then(() => {
-            alert('🟢 提示词已生成并复制到剪贴板！\n\n请直接粘贴到 ChatGPT / Claude / 扣子使用。');
-        }).catch(err => {
-            console.error('复制失败:', err);
-        });
+${userInput}`;
     }
 
-    function clearInput() {
-        document.getElementById('userInput').value = '';
-        const outputDiv = document.getElementById('promptOutput');
-        outputDiv.style.display = 'none';m
-        outputDiv.innerText = '';
-    }
-</script>
-</body>
-</html>
+    // 显示并自动复制到剪贴板
+    const outputDiv = document.getElementById('promptOutput');
+    outputDiv.innerText = finalPrompt;
+    outputDiv.style.display = 'block';
+
+    navigator.clipboard.writeText(finalPrompt).then(() => {
+        const btnText = (type === 'poster' ? '🎨 仅海报' : '📋 全套文案');
+        alert('🟢 ' + btnText + '提示词已成功生成并复制到剪贴板！\n\n请直接粘贴到 ChatGPT / Claude / 扣子等 AI 工具中使用。');
+    }).catch(err => {
+        console.error('自动复制失败，请手动
