@@ -1,0 +1,67 @@
+nohup: ignoring input
+[2026-09-03 18:38:48 +0800] [29356] [INFO] Starting gunicorn 26.2.0
+[2026-09-03 18:38:48 +0800] [29356] [INFO] Listening at: http://127.0.0.1:5101 (29356)
+[2026-09-03 18:38:48 +0800] [29356] [INFO] Using worker: sync
+[2026-09-03 18:38:48 +0800] [29357] [INFO] Booting worker with pid: 29357
+[2026-09-03 18:38:48 +0800] [29358] [INFO] Booting worker with pid: 29358
+[2026-09-03 18:38:48 +0800] [29356] [INFO] Control socket listening at /run/user/0/gunicorn.ctl
+2026-09-03 18:39:37,600 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=2
+2026-09-03 18:39:37,605 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 18:39:37,606 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 18:39:42,084 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 18:39:42,084 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=4.484s
+2026-09-03 18:56:24,977 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=2
+2026-09-03 18:56:24,986 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 18:56:24,987 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 18:56:29,644 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 18:56:29,645 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=4.668s
+2026-09-03 19:03:01,293 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=3
+2026-09-03 19:03:01,299 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:03:01,300 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:03:04,582 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:03:04,582 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.289s
+2026-09-03 19:06:20,987 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=6
+2026-09-03 19:06:20,993 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:06:20,993 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:06:25,733 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:06:25,734 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=4.747s
+2026-09-03 19:45:14,573 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=6
+2026-09-03 19:45:14,583 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:45:14,584 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:45:18,407 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:45:18,408 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.835s
+2026-09-03 19:45:43,937 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=5
+2026-09-03 19:45:43,942 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:45:43,943 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:45:47,253 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:45:47,253 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.316s
+2026-09-03 19:46:13,279 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=2
+2026-09-03 19:46:13,286 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:46:13,287 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:46:16,840 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:46:16,840 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.561s
+2026-09-03 19:46:26,608 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=6
+2026-09-03 19:46:26,613 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:46:26,614 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:46:29,676 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:46:29,677 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.068s
+2026-09-03 19:47:11,889 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=8
+2026-09-03 19:47:11,894 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:47:11,894 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:47:15,192 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:47:15,193 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.304s
+2026-09-03 19:47:45,234 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=8
+2026-09-03 19:47:45,239 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:47:45,240 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:47:48,428 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:47:48,428 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.194s
+2026-09-03 19:48:07,314 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=2
+2026-09-03 19:48:07,318 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:48:07,319 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:48:10,808 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:48:10,808 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.495s
+2026-09-03 19:58:03,481 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=2
+2026-09-03 19:58:03,487 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 19:58:03,487 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 19:58:06,875 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 19:58:06,876 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.395s

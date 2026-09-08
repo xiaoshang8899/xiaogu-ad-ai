@@ -1,0 +1,117 @@
+[2026-09-03 12:03:53 +0800] [27968] [INFO] Starting gunicorn 26.2.0
+[2026-09-03 12:03:53 +0800] [27968] [INFO] Listening at: http://127.0.0.1:5101 (27968)
+[2026-09-03 12:03:53 +0800] [27968] [INFO] Using worker: sync
+[2026-09-03 12:03:53 +0800] [27969] [INFO] Booting worker with pid: 27969
+[2026-09-03 12:03:53 +0800] [27970] [INFO] Booting worker with pid: 27970
+[2026-09-03 12:03:53 +0800] [27968] [INFO] Control socket listening at /run/user/0/gunicorn.ctl
+[2026-09-03 12:04:15 +0800] [27968] [INFO] Handling signal: term
+[2026-09-03 12:04:15 +0800] [27969] [INFO] Worker exiting (pid: 27969)
+[2026-09-03 12:04:15 +0800] [27970] [INFO] Worker exiting (pid: 27970)
+[2026-09-03 12:04:15 +0800] [27968] [INFO] Worker (pid:27969) was sent SIGTERM!
+[2026-09-03 12:04:15 +0800] [27968] [INFO] Worker (pid:27970) was sent SIGTERM!
+[2026-09-03 12:04:15 +0800] [27973] [INFO] Starting gunicorn 26.2.0
+[2026-09-03 12:04:15 +0800] [27973] [INFO] Listening at: http://127.0.0.1:5101 (27973)
+[2026-09-03 12:04:15 +0800] [27973] [INFO] Using worker: sync
+[2026-09-03 12:04:15 +0800] [27974] [INFO] Booting worker with pid: 27974
+[2026-09-03 12:04:15 +0800] [27968] [INFO] Shutting down: Master
+[2026-09-03 12:04:15 +0800] [27975] [INFO] Booting worker with pid: 27975
+[2026-09-03 12:04:16 +0800] [27973] [INFO] Control socket listening at /run/user/0/gunicorn.ctl
+2026-09-03 12:04:26,737 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=2
+2026-09-03 12:04:26,742 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:04:26,743 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:04:30,361 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:04:30,362 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.624s
+2026-09-03 12:04:47,266 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=5
+2026-09-03 12:04:47,271 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:04:47,272 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:04:50,720 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:04:50,721 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.455s
+2026-09-03 12:05:09,018 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=6
+2026-09-03 12:05:09,022 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:05:09,023 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:05:14,055 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=6
+2026-09-03 12:05:14,059 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:05:14,059 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:05:14,131 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:05:14,131 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=5.113s
+2026-09-03 12:05:18,998 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:05:18,998 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=4.943s
+2026-09-03 12:05:19,086 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=6
+2026-09-03 12:05:19,090 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:05:19,091 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:05:22,135 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:05:22,135 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.049s
+2026-09-03 12:06:12,976 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=6
+2026-09-03 12:06:12,980 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:06:12,982 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:06:15,635 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:06:15,636 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=2.659s
+2026-09-03 12:10:43,766 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=5
+2026-09-03 12:10:43,773 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:10:43,774 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:10:48,207 | ERROR | tongyuan-ai | 客服请求失败 | channel=wechat | customer_id=10 | elapsed=4.441s
+Traceback (most recent call last):
+  File "/var/www/html/tongyuan-wechat-ai/agent.py", line 120, in chat
+    answer = self.ai_service.chat(
+  File "/var/www/html/tongyuan-wechat-ai/services/ai_service.py", line 234, in chat
+    raise RuntimeError(
+RuntimeError: AI 返回内容为空
+2026-09-03 12:11:21,561 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=7
+2026-09-03 12:11:21,565 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:11:21,566 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:11:24,763 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:11:24,763 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.202s
+[2026-09-03 12:16:25 +0800] [27975] [INFO] Worker exiting (pid: 27975)
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=5
+[WECHAT] AI回复完成 | customer_id=10
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=6
+[WECHAT] AI回复完成 | customer_id=10
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=5
+[WECHAT ERROR] AI 返回内容为空
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=7
+[WECHAT] AI回复完成 | customer_id=10
+[2026-09-03 12:16:25 +0800] [27973] [INFO] Handling signal: term
+[2026-09-03 12:16:25 +0800] [27974] [INFO] Worker exiting (pid: 27974)
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=2
+[WECHAT] AI回复完成 | customer_id=10
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=6
+[WECHAT] AI回复完成 | customer_id=10
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=6
+[WECHAT] AI回复完成 | customer_id=10
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=6
+[WECHAT] AI回复完成 | customer_id=10
+[2026-09-03 12:16:25 +0800] [27973] [INFO] Worker (pid:27974) was sent SIGTERM!
+[2026-09-03 12:16:25 +0800] [27973] [INFO] Worker (pid:27975) was sent SIGTERM!
+[2026-09-03 12:16:25 +0800] [28031] [INFO] Starting gunicorn 26.2.0
+[2026-09-03 12:16:25 +0800] [28031] [INFO] Listening at: http://127.0.0.1:5101 (28031)
+[2026-09-03 12:16:25 +0800] [28031] [INFO] Using worker: sync
+[2026-09-03 12:16:25 +0800] [28032] [INFO] Booting worker with pid: 28032
+[2026-09-03 12:16:25 +0800] [27973] [INFO] Shutting down: Master
+[2026-09-03 12:16:25 +0800] [28033] [INFO] Booting worker with pid: 28033
+[2026-09-03 12:16:25 +0800] [28031] [INFO] Control socket listening at /run/user/0/gunicorn.ctl
+2026-09-03 12:16:34,564 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=2
+2026-09-03 12:16:34,570 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:16:34,571 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:16:38,882 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:16:38,882 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=4.318s
+2026-09-03 12:17:00,141 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=13
+2026-09-03 12:17:00,146 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:17:00,146 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:17:04,378 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:17:04,379 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=4.238s
+2026-09-03 12:18:10,830 | INFO | tongyuan-ai | 客服请求开始 | channel=wechat | openid_hash=f91e195d40b3 | message_length=3
+2026-09-03 12:18:10,835 | INFO | tongyuan-ai | 客户信息已加载 | customer_id=10 | channel=wechat | openid_hash=f91e195d40b3
+2026-09-03 12:18:10,836 | INFO | tongyuan-ai | 历史对话已加载 | customer_id=10 | history_count=10
+2026-09-03 12:18:14,511 | INFO | tongyuan-ai | AI对话已保存 | customer_id=10 | channel=wechat
+2026-09-03 12:18:14,511 | INFO | tongyuan-ai | 客服请求成功 | channel=wechat | customer_id=10 | elapsed=3.681s
+[2026-09-03 12:23:52 +0800] [28032] [INFO] Worker exiting (pid: 28032)
+[2026-09-03 12:23:52 +0800] [28031] [INFO] Handling signal: term
+[2026-09-03 12:23:52 +0800] [28033] [INFO] Worker exiting (pid: 28033)
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=2
+[WECHAT] AI回复完成 | customer_id=10
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=13
+[WECHAT] AI回复完成 | customer_id=10
+[WECHAT] 收到文本消息 | openid_hash=f91e195d40b3 | length=3
+[WECHAT] AI回复完成 | customer_id=10
+[2026-09-03 12:23:52 +0800] [28031] [INFO] Worker (pid:28032) was sent SIGTERM!
+[2026-09-03 12:23:53 +0800] [28031] [INFO] Shutting down: Master
